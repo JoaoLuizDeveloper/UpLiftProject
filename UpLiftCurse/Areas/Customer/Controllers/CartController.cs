@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using UpLiftCurse.AccessData.Data.Repository.IRepository;
 using UpLiftCurse.Extensions;
 using UpLiftCurse.Models;
@@ -16,7 +17,7 @@ namespace UpLiftCurse.Areas.Customer.Controllers
     {
         private readonly IUnitOfWork _unitOfWork;
         [BindProperty]
-        private CartVM CartVM { get; set; }
+        public CartVM CartVM { get; set; }
 
         public CartController(IUnitOfWork unitOfWork)
         {
@@ -37,11 +38,90 @@ namespace UpLiftCurse.Areas.Customer.Controllers
                 foreach (int serviceId in sessionList)
                 {
                     CartVM.ServiceList.Add(_unitOfWork.Service.GetFirstOrDefault(u => u.Id == serviceId, includeProperties: "Frequency,Category"));
-
                 }
 
             }
             return View(CartVM);
+        }
+
+        public IActionResult Summary()
+        {
+            if (HttpContext.Session.Getobject<List<int>>(SD.SessionCart) != null)
+            {
+                List<int> sessionList = new List<int>();
+                sessionList = HttpContext.Session.Getobject<List<int>>(SD.SessionCart);
+                foreach (int serviceId in sessionList)
+                {
+                    CartVM.ServiceList.Add(_unitOfWork.Service.GetFirstOrDefault(u => u.Id == serviceId, includeProperties: "Frequency,Category"));
+                }
+            }
+            return View(CartVM);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        [ActionName("Summary")]
+        public IActionResult SummaryPOST()
+        {
+            if (HttpContext.Session.Getobject<List<int>>(SD.SessionCart) != null)
+            {
+                List<int> sessionList = new List<int>();
+                sessionList = HttpContext.Session.Getobject<List<int>>(SD.SessionCart);
+                CartVM.ServiceList = new List<Service>();
+
+                foreach (int serviceId in sessionList)
+                {
+                    CartVM.ServiceList.Add(_unitOfWork.Service.Get(serviceId));
+
+                }
+            }
+
+            if(!ModelState.IsValid)
+            {
+                return View(CartVM);
+            }
+            else
+            {
+                CartVM.OrderHeader.OrderDate = DateTime.Now;
+                CartVM.OrderHeader.Status = SD.StatusSubmitted;
+                CartVM.OrderHeader.ServiceCount = CartVM.ServiceList.Count;
+
+                _unitOfWork.OrderHeader.Add(CartVM.OrderHeader);
+                _unitOfWork.Save();
+
+                foreach(var item in CartVM.ServiceList)
+                {
+                    OrderDetails orderDetails = new OrderDetails
+                    {
+                        ServiceId = item.Id,
+                        OrderHeaderId = CartVM.OrderHeader.Id,
+                        ServiceName = item.Name,
+                        Price = item.Price
+                    };
+
+                    _unitOfWork.OrderDetails.Add(orderDetails);                    
+                }
+
+                _unitOfWork.Save();
+                HttpContext.Session.Setobject(SD.SessionCart, new List<int>());
+                return RedirectToAction("OrderConfirmation", "Cart", new { id = CartVM.OrderHeader.Id });
+            }            
+        }
+
+        public IActionResult OrderConfirmation(int id)
+        {
+            return View(id);
+        }
+
+        public IActionResult Remove(int serviceId)
+        {
+            List<int> sessionList = new List<int>();
+            sessionList = HttpContext.Session.Getobject<List<int>>(SD.SessionCart);
+            sessionList.Remove(serviceId);
+
+            HttpContext.Session.Setobject(SD.SessionCart, sessionList);
+
+            return RedirectToAction(nameof(Index));
         }
     }
 }
