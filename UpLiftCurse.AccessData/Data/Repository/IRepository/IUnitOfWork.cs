@@ -9,6 +9,8 @@ namespace UpLiftCurse.AccessData.Data.Repository.IRepository
         ICategoryRepository Category { get; }
         IFrequencyRepository Frequency { get; }
         IServiceRepository Service { get; }
+        IOrderHeaderRepository OrderHeader { get; }
+        IOrderDetailsRepository OrderDetails { get; }
         void Save();
     }
 }

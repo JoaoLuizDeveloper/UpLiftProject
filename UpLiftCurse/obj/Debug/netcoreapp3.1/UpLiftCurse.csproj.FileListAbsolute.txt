@@ -990,3 +990,5 @@ C:\Users\JuninhoDRZ\source\UpLiftProject\UpLiftProject\UpLiftCurse\obj\Debug\net
 C:\Users\JuninhoDRZ\source\UpLiftProject\UpLiftProject\UpLiftCurse\obj\Debug\netcoreapp3.1\UpLiftCurse.dll
 C:\Users\JuninhoDRZ\source\UpLiftProject\UpLiftProject\UpLiftCurse\obj\Debug\netcoreapp3.1\UpLiftCurse.pdb
 C:\Users\JuninhoDRZ\source\UpLiftProject\UpLiftProject\UpLiftCurse\obj\Debug\netcoreapp3.1\UpLiftCurse.genruntimeconfig.cache
+C:\Users\JuninhoDRZ\source\UpLiftProject\UpLiftProject\UpLiftCurse\obj\Debug\netcoreapp3.1\Razor\Areas\Customer\Views\Home\Details.cshtml.g.cs
+C:\Users\JuninhoDRZ\source\UpLiftProject\UpLiftProject\UpLiftCurse\obj\Debug\netcoreapp3.1\Razor\Areas\Customer\Views\Cart\Index.cshtml.g.cs
