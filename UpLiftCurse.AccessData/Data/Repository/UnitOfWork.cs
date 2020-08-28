@@ -19,6 +19,7 @@ namespace UpLiftCurse.AccessData.Data.Repository
             Service = new ServiceRepository(_db);
             OrderHeader = new OrderHeaderRepository(_db);
             OrderDetails = new OrderDetailsRepository(_db);
+            Usuario = new UsuarioRepository(_db);
         }
 
         public ICategoryRepository Category { get; private set; }
@@ -26,6 +27,7 @@ namespace UpLiftCurse.AccessData.Data.Repository
         public IServiceRepository Service { get; private set; }
         public IOrderHeaderRepository OrderHeader { get; private set; }
         public IOrderDetailsRepository OrderDetails { get; private set; }
+        public IUsuarioRepository Usuario { get; private set; }
 
         public void Dispose()
         {

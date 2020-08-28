@@ -19,5 +19,6 @@ namespace UpLiftCurse.DataAccess.Data
         public DbSet<Service> Service { get; set; }
         public DbSet<OrderHeader> OrderHeader { get; set; }
         public DbSet<OrderDetails> OrderDetails { get; set; }
+        public DbSet<Usuario> Usuarios { get; set; }
     }
 }
