@@ -16,8 +16,13 @@ namespace UpLiftCurse.AccessData.Data.Repository
         public OrderHeaderRepository(ApplicationDbContext db) : base(db)
         {
             _db = db;
-
         }
 
+        public void ChangeOrderStatus(int orderheaderId, string status)
+        {
+            var orderFromDb = _db.OrderHeader.FirstOrDefault(o => o.Id == orderheaderId);
+            orderFromDb.Status = status;
+            _db.SaveChanges();
+        }
     }
 }

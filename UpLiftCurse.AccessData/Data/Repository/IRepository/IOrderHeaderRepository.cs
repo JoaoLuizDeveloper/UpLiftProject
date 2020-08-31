@@ -8,5 +8,6 @@ namespace UpLiftCurse.AccessData.Data.Repository.IRepository
 {
     public interface IOrderHeaderRepository : IRepository<OrderHeader>
     {
+        void ChangeOrderStatus(int orderheaderId, string status);
     }
 }

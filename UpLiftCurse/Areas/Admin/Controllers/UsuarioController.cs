@@ -17,6 +17,7 @@ namespace UpLiftCurse.Areas.Admin.Controllers
         {
             _unitOfWork = unitOfWork;
         }
+
         public IActionResult Index()
         {
             var claimsIdentity = (ClaimsIdentity)this.User.Identity;
