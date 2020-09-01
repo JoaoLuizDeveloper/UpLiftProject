@@ -16,6 +16,7 @@ using UpLiftCurse.AccessData.Data.Repository.IRepository;
 using UpLiftCurse.AccessData.Data.Repository;
 using Microsoft.AspNetCore.Identity.UI.Services;
 using UpLiftCurse.Utility;
+using UpLiftCurse.AccessData.Data.Initializer;
 
 namespace UpLiftCurse
 {
@@ -41,6 +42,7 @@ namespace UpLiftCurse
 
             services.AddSingleton<IEmailSender, EmailSender>();
             services.AddScoped<IUnitOfWork, UnitOfWork>();
+            services.AddScoped<IDbInitializer, DbInitializer>();
 
             services.AddSession(options =>
             {
@@ -54,7 +56,7 @@ namespace UpLiftCurse
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, IDbInitializer dbInit)
         {
             if (env.IsDevelopment())
             {
@@ -71,7 +73,7 @@ namespace UpLiftCurse
             app.UseStaticFiles();
             app.UseSession();
             app.UseRouting();
-
+            dbInit.Initialize();
             app.UseAuthentication();
             app.UseAuthorization();
 

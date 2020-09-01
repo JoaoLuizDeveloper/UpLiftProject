@@ -998,3 +998,5 @@ C:\Users\JuninhoDRZ\source\UpLiftProject\UpLiftProject\UpLiftCurse\bin\Debug\net
 C:\Users\JuninhoDRZ\source\UpLiftProject\UpLiftProject\UpLiftCurse\obj\Debug\netcoreapp3.1\UpLiftCurse.csproj.CoreCompileInputs.cache
 C:\Users\JuninhoDRZ\source\UpLiftProject\UpLiftProject\UpLiftCurse\obj\Debug\netcoreapp3.1\UpLiftCurse.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\JuninhoDRZ\source\UpLiftProject\UpLiftProject\UpLiftCurse\obj\Debug\netcoreapp3.1\UpLiftCurse.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\JuninhoDRZ\source\UpLiftProject\UpLiftProject\UpLiftCurse\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\WebImages\Index.cshtml.g.cs
+C:\Users\JuninhoDRZ\source\UpLiftProject\UpLiftProject\UpLiftCurse\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\WebImages\Upsert.cshtml.g.cs
