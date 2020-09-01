@@ -22,7 +22,7 @@ C:\Users\JuninhoDRZ\source\UpLiftProject\UpLiftProject\UpLiftCurse.AccessData\bi
 C:\Users\JuninhoDRZ\source\UpLiftProject\UpLiftProject\UpLiftCurse.AccessData\obj\Debug\netcoreapp3.1\UpLiftCurse.AccessData.csprojAssemblyReference.cache
 C:\Users\JuninhoDRZ\source\UpLiftProject\UpLiftProject\UpLiftCurse.AccessData\obj\Debug\netcoreapp3.1\UpLiftCurse.AccessData.AssemblyInfoInputs.cache
 C:\Users\JuninhoDRZ\source\UpLiftProject\UpLiftProject\UpLiftCurse.AccessData\obj\Debug\netcoreapp3.1\UpLiftCurse.AccessData.AssemblyInfo.cs
-C:\Users\JuninhoDRZ\source\UpLiftProject\UpLiftProject\UpLiftCurse.AccessData\obj\Debug\netcoreapp3.1\UpLiftCurse.AccessData.csproj.CoreCompileInputs.cache
 C:\Users\JuninhoDRZ\source\UpLiftProject\UpLiftProject\UpLiftCurse.AccessData\obj\Debug\netcoreapp3.1\UpLiftCurse.AccessData.csproj.CopyComplete
 C:\Users\JuninhoDRZ\source\UpLiftProject\UpLiftProject\UpLiftCurse.AccessData\obj\Debug\netcoreapp3.1\UpLiftCurse.AccessData.dll
 C:\Users\JuninhoDRZ\source\UpLiftProject\UpLiftProject\UpLiftCurse.AccessData\obj\Debug\netcoreapp3.1\UpLiftCurse.AccessData.pdb
+C:\Users\JuninhoDRZ\source\UpLiftProject\UpLiftProject\UpLiftCurse.AccessData\obj\Debug\netcoreapp3.1\UpLiftCurse.AccessData.csproj.CoreCompileInputs.cache

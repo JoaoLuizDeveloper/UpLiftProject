@@ -18,7 +18,7 @@ using UpLiftCurse.Utility;
 
 namespace UpLiftCurse.Areas.Identity.Pages.Account
 {
-    [AllowAnonymous]
+    [Authorize]
     public class RegisterModel : PageModel
     {
         private readonly SignInManager<IdentityUser> _signInManager;

@@ -12,6 +12,8 @@ namespace UpLiftCurse.AccessData.Data.Repository.IRepository
         IOrderHeaderRepository OrderHeader { get; }
         IOrderDetailsRepository OrderDetails { get; }
         IUsuarioRepository Usuario { get; }
+        IUSP_Call USP_Call { get; }
+
         void Save();
     }
 }

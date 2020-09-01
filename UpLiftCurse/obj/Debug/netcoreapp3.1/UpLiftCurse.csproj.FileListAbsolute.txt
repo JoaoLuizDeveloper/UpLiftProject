@@ -910,9 +910,6 @@ C:\Users\JuninhoDRZ\source\UpLiftProject\UpLiftProject\UpLiftCurse\bin\Debug\net
 C:\Users\JuninhoDRZ\source\UpLiftProject\UpLiftProject\UpLiftCurse\obj\Debug\netcoreapp3.1\UpLiftCurse.csprojAssemblyReference.cache
 C:\Users\JuninhoDRZ\source\UpLiftProject\UpLiftProject\UpLiftCurse\obj\Debug\netcoreapp3.1\UpLiftCurse.AssemblyInfoInputs.cache
 C:\Users\JuninhoDRZ\source\UpLiftProject\UpLiftProject\UpLiftCurse\obj\Debug\netcoreapp3.1\UpLiftCurse.AssemblyInfo.cs
-C:\Users\JuninhoDRZ\source\UpLiftProject\UpLiftProject\UpLiftCurse\obj\Debug\netcoreapp3.1\UpLiftCurse.csproj.CoreCompileInputs.cache
-C:\Users\JuninhoDRZ\source\UpLiftProject\UpLiftProject\UpLiftCurse\obj\Debug\netcoreapp3.1\UpLiftCurse.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\JuninhoDRZ\source\UpLiftProject\UpLiftProject\UpLiftCurse\obj\Debug\netcoreapp3.1\UpLiftCurse.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\JuninhoDRZ\source\UpLiftProject\UpLiftProject\UpLiftCurse\obj\Debug\netcoreapp3.1\UpLiftCurse.RazorAssemblyInfo.cache
 C:\Users\JuninhoDRZ\source\UpLiftProject\UpLiftProject\UpLiftCurse\obj\Debug\netcoreapp3.1\UpLiftCurse.RazorAssemblyInfo.cs
 C:\Users\JuninhoDRZ\source\UpLiftProject\UpLiftProject\UpLiftCurse\obj\Debug\netcoreapp3.1\UpLiftCurse.TagHelpers.input.cache
@@ -997,3 +994,7 @@ C:\Users\JuninhoDRZ\source\UpLiftProject\UpLiftProject\UpLiftCurse\obj\Debug\net
 C:\Users\JuninhoDRZ\source\UpLiftProject\UpLiftProject\UpLiftCurse\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Usuario\Index.cshtml.g.cs
 C:\Users\JuninhoDRZ\source\UpLiftProject\UpLiftProject\UpLiftCurse\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Order\Index.cshtml.g.cs
 C:\Users\JuninhoDRZ\source\UpLiftProject\UpLiftProject\UpLiftCurse\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Order\Details.cshtml.g.cs
+C:\Users\JuninhoDRZ\source\UpLiftProject\UpLiftProject\UpLiftCurse\bin\Debug\netcoreapp3.1\Dapper.dll
+C:\Users\JuninhoDRZ\source\UpLiftProject\UpLiftProject\UpLiftCurse\obj\Debug\netcoreapp3.1\UpLiftCurse.csproj.CoreCompileInputs.cache
+C:\Users\JuninhoDRZ\source\UpLiftProject\UpLiftProject\UpLiftCurse\obj\Debug\netcoreapp3.1\UpLiftCurse.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\JuninhoDRZ\source\UpLiftProject\UpLiftProject\UpLiftCurse\obj\Debug\netcoreapp3.1\UpLiftCurse.MvcApplicationPartsAssemblyInfo.cache

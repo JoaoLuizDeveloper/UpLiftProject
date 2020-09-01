@@ -3,11 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Security.Claims;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using UpLiftCurse.AccessData.Data.Repository.IRepository;
+using UpLiftCurse.Utility;
 
 namespace UpLiftCurse.Areas.Admin.Controllers
 {
+    [Authorize(Roles = SD.Admin)]
     [Area("Admin")]
     public class UsuarioController : Controller
     {

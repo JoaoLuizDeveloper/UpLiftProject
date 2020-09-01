@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "xsOSN1J5g2Y5fArcrwq1gifJWXGa1d4Uwn2noX3dFh8TdtvFutMuBYw7mHDwTx9gNNQ6334rb7MGl0cTXE05XA==",
+  "dgSpecHash": "+EgtFyz9YI6qSUCbmgSos0WC+9Rygk6RI1fDrT1FpJBYAjlmqpTICOYYYrwMXe95dkU4W1Sx6oS2jtlb7haIOg==",
   "success": true,
   "projectFilePath": "C:\\Users\\JuninhoDRZ\\source\\UpLiftProject\\UpLiftProject\\UpLiftCurse.AccessData\\UpLiftCurse.AccessData.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\JuninhoDRZ\\.nuget\\packages\\dapper\\2.0.35\\dapper.2.0.35.nupkg.sha512",
     "C:\\Users\\JuninhoDRZ\\.nuget\\packages\\microsoft.aspnetcore.antiforgery\\2.2.0\\microsoft.aspnetcore.antiforgery.2.2.0.nupkg.sha512",
     "C:\\Users\\JuninhoDRZ\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\JuninhoDRZ\\.nuget\\packages\\microsoft.aspnetcore.authentication.core\\2.2.0\\microsoft.aspnetcore.authentication.core.2.2.0.nupkg.sha512",
@@ -130,7 +131,7 @@
     "C:\\Users\\JuninhoDRZ\\.nuget\\packages\\system.reflection\\4.3.0\\system.reflection.4.3.0.nupkg.sha512",
     "C:\\Users\\JuninhoDRZ\\.nuget\\packages\\system.reflection.emit\\4.3.0\\system.reflection.emit.4.3.0.nupkg.sha512",
     "C:\\Users\\JuninhoDRZ\\.nuget\\packages\\system.reflection.emit.ilgeneration\\4.3.0\\system.reflection.emit.ilgeneration.4.3.0.nupkg.sha512",
-    "C:\\Users\\JuninhoDRZ\\.nuget\\packages\\system.reflection.emit.lightweight\\4.3.0\\system.reflection.emit.lightweight.4.3.0.nupkg.sha512",
+    "C:\\Users\\JuninhoDRZ\\.nuget\\packages\\system.reflection.emit.lightweight\\4.7.0\\system.reflection.emit.lightweight.4.7.0.nupkg.sha512",
     "C:\\Users\\JuninhoDRZ\\.nuget\\packages\\system.reflection.extensions\\4.3.0\\system.reflection.extensions.4.3.0.nupkg.sha512",
     "C:\\Users\\JuninhoDRZ\\.nuget\\packages\\system.reflection.primitives\\4.3.0\\system.reflection.primitives.4.3.0.nupkg.sha512",
     "C:\\Users\\JuninhoDRZ\\.nuget\\packages\\system.reflection.typeextensions\\4.3.0\\system.reflection.typeextensions.4.3.0.nupkg.sha512",

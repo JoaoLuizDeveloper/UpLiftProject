@@ -12,5 +12,6 @@ namespace UpLiftCurse.Utility
         public const string StatusRejected = "Rejected";
         public const string Admin = "Admin";
         public const string Manager = "Manager";
+        public const string Usp_GetAllCategory = "usp_GetAllCategory";
     }
 }

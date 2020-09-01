@@ -20,6 +20,7 @@ namespace UpLiftCurse.AccessData.Data.Repository
             OrderHeader = new OrderHeaderRepository(_db);
             OrderDetails = new OrderDetailsRepository(_db);
             Usuario = new UsuarioRepository(_db);
+            USP_Call = new USP_Call(_db);
         }
 
         public ICategoryRepository Category { get; private set; }
@@ -28,6 +29,7 @@ namespace UpLiftCurse.AccessData.Data.Repository
         public IOrderHeaderRepository OrderHeader { get; private set; }
         public IOrderDetailsRepository OrderDetails { get; private set; }
         public IUsuarioRepository Usuario { get; private set; }
+        public IUSP_Call USP_Call { get; private set; }
 
         public void Dispose()
         {
